@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import mainpic from '../leftimg.png'
 import leftimg from '../leftimg.jpg'
-import mainimg from '../main.jpg'
+import mainimg from '../mainpict3.jpg'
 export default function HomePage(){
 
 
@@ -19,11 +19,11 @@ export default function HomePage(){
 
 
 
-<div style={{backgroundImage:`url(${mainimg})`,objectFit:'fill'}} className="mainpic" >
+<div style={{backgroundImage:`url(${mainimg})`,objectFit:'contain'}} className="mainpic" >
 
 <div className="hometextcont">
 
-<h1>Shopping Made Easy</h1>
+<h1>Shopping<div className = 'easytext'>Eazy</div></h1>
 
 <Link className = 'explorebutton' to = '/products'>Explore Now</Link>
 
