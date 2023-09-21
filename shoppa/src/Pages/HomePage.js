@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import mainpic from '../leftimg.png'
 import leftimg from '../leftimg.jpg'
-import mainimg from '../mainpict3.jpg'
+import mainimg from '../mainpict5.jpg'
 export default function HomePage(){
 
 
