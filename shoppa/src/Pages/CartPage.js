@@ -19,7 +19,7 @@ const mycartitems = mycartlist.filter((item)=>{
     return true
 }).map(
     (item)=>{
-return <CartItem image = {item.image} price = {item.price} title ={item.title}></CartItem>
+return <CartItem id = {item.id} image = {item.image} price = {item.price} title ={item.title}></CartItem>
     }
 )
 

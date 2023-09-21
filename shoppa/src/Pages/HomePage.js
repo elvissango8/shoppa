@@ -19,7 +19,7 @@ export default function HomePage(){
 
 
 
-<div style={{backgroundImage:`url(${mainimg})`,objectFit:'contain'}} className="mainpic" >
+<div  className="mainpic" >
 
 <div className="hometextcont">
 

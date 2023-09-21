@@ -1,7 +1,28 @@
+import { useContext } from "react";
+import { MyCartContext } from "../Contexts/MyCartContex";
 
 
 export default function CartItem(props){
 
+    const {mycartlist,setCart}=useContext(MyCartContext)
+
+    function removeItem(i){
+
+  const filtered=  mycartlist.filter((item)=>{
+            return item.id!==i;
+            
+                })
+
+
+        setCart(
+   filtered
+    
+        )
+    
+    
+    
+    }
+    
 
 
     return (
@@ -16,7 +37,8 @@ export default function CartItem(props){
 
 <p className = 'status'>**Available</p>
 <div>
-<button className="cartitemremovebutton">Remove</button>
+<button className="cartitemremovebutton" onClick={
+    ()=>removeItem(props.id)}>Remove</button>
 
 </div>
 </div>
