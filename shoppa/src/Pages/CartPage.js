@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import CartItem from '../Components/CartItem'
 import { MyCartContext } from '../Contexts/MyCartContex'
 import ecocash from '../ecocash.png'
+import { Link } from 'react-router-dom'
 
 export default function CartPage(){
 
@@ -84,7 +85,8 @@ mycartitems
     
     </div>:
     <div className='emptycart'>
-<h1>No Items in Cart</h1>
+<h1>Your Cart is Empty !</h1>
+<p>Go to <Link to = '/products'>Products</Link> and add your first cart item.</p>
 
     </div>
 )
