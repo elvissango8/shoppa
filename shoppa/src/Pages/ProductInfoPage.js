@@ -13,19 +13,34 @@ const {mycartlist,setCart} = useContext(MyCartContext);
 
 function addItemToCart(){
 
+//First checking if the cart doesnt already contain the item we want to add
+ var contains =  mycartlist.find((item)=>{
+     
+    return item.id === product.id
+    })
 
+  if(contains){
+    alert(`${product.title} already added, open the Cart page to change the quantity`)
+  }  
 
-    setCart(
+    if(!contains){
+
+        //adding when it does not contain
+        setCart(
 
         
-        (prevcart)=>{
+        
+            (prevcart)=>{
+    
+                return [...prevcart,{'id':product.id,'title':product.title,'description':product.description,
+            'price': product.price,'image':product.image}]
+            }
+            
+            
+            )
+    
+    }
 
-            return [...prevcart,{'id':product.id,'title':product.title,'description':product.description,
-        'price': product.price,'image':product.image}]
-        }
-        
-        
-        )
 
 
 }
