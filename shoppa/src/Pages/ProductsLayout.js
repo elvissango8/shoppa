@@ -7,7 +7,7 @@ export default function ProductsLayout(){
 
 return (
 
-<div>
+<div className="productslayout">
 <Outlet></Outlet>
     </div>
 )

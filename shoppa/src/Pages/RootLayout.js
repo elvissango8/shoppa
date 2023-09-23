@@ -28,12 +28,10 @@ return (
 
 </nav> 
 
-<div className = 'maincont'>
-<Outlet></Outlet>
 
-</div>
-  
-      </div>
+<Outlet className='outlet'></Outlet>
+
+  </div>
 )
 
 

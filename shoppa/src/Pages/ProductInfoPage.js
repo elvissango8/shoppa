@@ -20,7 +20,7 @@ function addItemToCart(){
     })
 
   if(contains){
-    alert(`${product.title} already added, open the Cart page to change the quantity`)
+    alert(`${product.title} already added to your Cart, open the Cart page to change the quantity`)
   }  
 
     if(!contains){

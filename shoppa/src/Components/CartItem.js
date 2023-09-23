@@ -31,16 +31,17 @@ export default function CartItem(props){
          <img src = {props.image}></img>  
 
          <div className = 'cartitemright'>
+ <div className='cartitemtitlecont'>          
 <p className="carttitle">{props.title}</p>
+</div> 
 <p className="cartprice">${props.price}</p>
 <div className = 'cartitemoptions'>
 
-<p className = 'status'>**Available</p>
-<div>
+<p className="status">Available</p>
+
 <button className="cartitemremovebutton" onClick={
     ()=>removeItem(props.id)}>Remove</button>
 
-</div>
 </div>
 </div> 
         </div>

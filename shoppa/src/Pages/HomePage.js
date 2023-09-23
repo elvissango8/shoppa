@@ -7,16 +7,8 @@ export default function HomePage(){
 
 
     return (
-        <div>
+     
             
-<div className="homemain">
-
-
-
-<div className="homecontentcont">
-
-
-
 
 
 <div  className="mainpic" >
@@ -31,6 +23,11 @@ export default function HomePage(){
 
 
 
+
+
+
+
+
 </div>
 
 
@@ -38,20 +35,6 @@ export default function HomePage(){
 
 
 
-
-
-</div>
-
-
-
-</div>
-<div className = 'othermai'>
-
-
-<small></small>
-</div>
-
-</div>
     )
 
 
